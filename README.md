@@ -13,7 +13,7 @@ convenience this project uses [asdf-vm] with the respective [asdf-golang]
 plugin.
 
 ```shell
-git clone https://github.com/subvisual/commp2cid.git --branch v1.0.0
+git clone https://github.com/subvisual/commp2cid.git --branch v1.0.1
 cd commp2cid
 make
 ```
