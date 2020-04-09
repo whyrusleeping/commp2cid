@@ -52,7 +52,7 @@ Copyright 2020. [Subvisual, Lda].
 
 [Filecoin]: https://filecoin.io
 [the CIDv1 standard]: https://github.com/multiformats/cid
-[asdf]: https://asdf-vm.com
+[asdf-vm]: https://asdf-vm.com
 [asdf-golang]: https://github.com/kennyp/asdf-golang
 [Filecoin Paper]: https://filecoin.io/filecoin.pdf
 [Filecoin PoRep Spec]: https://filecoin-project.github.io/specs/#algorithms__porep
