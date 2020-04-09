@@ -41,8 +41,7 @@ with the respective CID in the standard output.
 See the [Filecoin PoRep Spec] and the [Filecoin Paper] for how these piece
 commitment hashes are generated.
 
-The codes necessary to convert those hashes to CIDs is provided by
-[filecoin-project/go-fil-commcid].
+The conversion is handled by [filecoin-project/go-fil-commcid].
 
 ## License
 
