@@ -4,8 +4,8 @@ default: all
 
 all: commp2cid
 
-%: %.go
-	go build $<
+commp2cid: main.go
+	go build -o $@ $^
 
 clean:
-	rm commp2cid
+	rm -f commp2cid
