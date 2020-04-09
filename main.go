@@ -6,9 +6,10 @@ import (
   "io"
   "log"
   "os"
+  commcid "github.com/filecoin-project/go-fil-commcid"
 )
 
-func ReadLine(reader *bufio.Reader) (string, error) {
+func ReadLine(reader *bufio.Reader) ([]byte, error) {
   var line, part []byte
   var isPrefix bool = true
   var err error = nil
@@ -18,22 +19,18 @@ func ReadLine(reader *bufio.Reader) (string, error) {
     line = append(line, part...)
   }
 
-  return string(line), err
-}
-
-func ConvertCommitmentPieceToCID(commp string) (string) {
-  return commp
+  return line, err
 }
 
 func main() {
   var reader = bufio.NewReader(os.Stdin)
-  var commp string
+  var commp []byte
   var err error = nil
 
   for err == nil {
     commp, err = ReadLine(reader)
     if err == nil {
-      cid := ConvertCommitmentPieceToCID(commp)
+      cid := commcid.PieceCommitmentV1ToCID(commp)
       fmt.Println(cid)
     }
   }
