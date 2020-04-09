@@ -6,7 +6,7 @@ that meet [the CIDv1 standard].
 
 ## Install
 
-There are no pre-built binaries, it has to be build from source.
+There are no pre-built binaries, it has to be built from source.
 
 The Go toolchain available must be available in the system. For development
 convenience this project uses [asdf-vm] with the respective [asdf-golang]
